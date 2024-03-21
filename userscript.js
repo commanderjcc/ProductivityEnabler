@@ -34,10 +34,8 @@
         var hostname = (new URL(url)).hostname.split('.').slice(-2).join('.');
         if (redirectSet.has(hostname)) {
             setInterval(function() {
-                window.stop();
                 window.location.href = location;
             }, 10000);
-            window.stop();
             window.location.href = location;
         }
     }
